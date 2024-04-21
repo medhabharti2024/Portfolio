@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medha portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js"></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <h2>Medha's portfolio</h2>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="l1"><a href="#">home</a></li>
+                <li class="l1"><a href="#">About</a></li>
+                <li class="l1"><a href="#">Service</a></li>
+                <li class="l1"><a href="medha.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="left1">Hye,I am <span class="span1">Medha</span>
+                <div>I am passionate <span id="element"> </span>
+                </div>
+            </div>
+            <div class="right1">
+                <img class="image" src="me5.jpeg" alt="mine"></div>
+
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['  web developer', '   wordpress developer', '  software developer', 'singer', 'dancer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
