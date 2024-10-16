@@ -17,6 +17,12 @@ body {
     height: 15vh;
 
 }
+.left h1:hover{
+    color: crimson;
+    transition: all;
+    transition-duration: 0.5s;
+    scale: 1.2;
+}
 
 .right ul {
     display: flex;
@@ -26,22 +32,21 @@ body {
 .right ul li {
     text-decoration: none;
     list-style: none;
+    color: white;
+    font-size: 16px;
 
 }
 
 .right ul li a {
     color: white;
     text-decoration: none;
-
 }
 
-.l1 :hover {
-
+.l1:hover {
     color: crimson;
     transition: all;
-    transition-duration: 2s;
-    font-size: 1.4rem;
-
+    transition-duration: 0.5s;
+    Scale: 1.2;
 }
 
 .main {
@@ -54,7 +59,7 @@ body {
 .container {
     display: flex;
     align-items: center;
-    gap: 1ovw;
+    gap: 1vw;
     
 }
 
@@ -75,9 +80,31 @@ body {
 .image {
     height: 55vh;
     width: 50vh;
+    border-radius: 10px;
 }
 
 .span1 {
     color: yellow;
 
 } 
+
+
+/* About section css */
+
+.About{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 4%;
+    background-color: beige;
+    color: black;
+}
+.text-center{
+    text-align: center;
+}
+
+.about-text{
+    margin: 5%;
+    padding-inline: 5%;
+    font-size: 20px;
+    line-height: 2;
+}
