@@ -6,18 +6,20 @@
 body {
     background-color: rgb(14, 14, 32);
     color: white;
-
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; 
     align-items: center;
     margin-top: 30px;
-    height: 15vh;
+    height: auto;
+    padding: 10px; 
+    margin-inline: 5%;
 
 }
-.left h1:hover{
+
+.left h1:hover {
     color: crimson;
     transition: all;
     transition-duration: 0.5s;
@@ -34,7 +36,6 @@ body {
     list-style: none;
     color: white;
     font-size: 16px;
-
 }
 
 .right ul li a {
@@ -46,21 +47,19 @@ body {
     color: crimson;
     transition: all;
     transition-duration: 0.5s;
-    Scale: 1.2;
+    scale: 1.2;
 }
 
 .main {
-    height: 70vh;
-    /* background-color: brown; */
-
-
+    height: auto; 
+    padding: 20px; 
 }
 
 .container {
     display: flex;
+    flex-direction: row; 
     align-items: center;
     gap: 1vw;
-    
 }
 
 .left1 {
@@ -68,13 +67,11 @@ body {
     margin-top: 5vh;
     margin-left: 30vh;
     width: 50%;
-    
 }
 
- .right1 {
+.right1 {
     margin-top: 11vh;
     margin-right: 5vh;
-    /* width: 40%; */
 }
 
 .image {
@@ -85,26 +82,101 @@ body {
 
 .span1 {
     color: yellow;
-
-} 
-
+}
 
 /* About section css */
-
-.About{
+.About {
     padding-top: 3%;
     padding-bottom: 3%;
     margin-top: 4%;
     background-color: beige;
     color: black;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
-.about-text{
+.about-text {
     margin: 5%;
     padding-inline: 5%;
     font-size: 20px;
     line-height: 2;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .left h1 {
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+
+    .right ul {
+        flex-direction: row;
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+
+    .right ul li {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left1 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .right1 {
+        margin-top: 5vh;
+        margin-right: 0;
+    }
+
+    .image {
+        height: auto;
+        width: 80%;
+    }
+
+   
+    #element {
+        display: inline-block;
+        min-width: 250px; 
+        text-align: left;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left1 {
+        font-size: 1.5rem;
+    }
+
+    .right ul li {
+        font-size: 14px; 
+    }
+
+    .left h1 {
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    #element {
+        min-width: 180px; 
+    }
 }
